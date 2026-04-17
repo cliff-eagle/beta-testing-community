@@ -3,225 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAPM | Socio-Linguistic Simulation Hub</title>
+    <title>EdTech Research | Beta Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .step-active { border-left: 4px solid #60a5fa; background: rgba(96, 165, 250, 0.1); }
+        .research-card { background: #ffffff; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
+        .research-card:hover { border-color: #3b82f6; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05); }
+        .tab-active { color: #2563eb; border-bottom: 2px solid #2563eb; }
         html { scroll-behavior: smooth; }
+        .hero-bg { background-color: #f8fafc; background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px); background-size: 24px 24px; }
     </style>
 </head>
-<body class="bg-[#0b0f1a] text-slate-300">
+<body class="bg-white text-slate-900 antialiased">
 
-<nav class="sticky top-0 z-50 glass px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center font-bold text-white">A</div>
-        <span class="font-extrabold tracking-tighter text-white text-xl">AAPM<span class="text-blue-500">.</span></span>
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+        <div class="w-2 h-6 bg-blue-600"></div>
+        <span class="font-bold tracking-tight text-lg">BETA<span class="text-blue-600">LAB</span></span>
     </div>
-    <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-400">
-        <a href="#about" class="hover:text-blue-400 transition">Mission</a>
-        <a href="#framework" class="hover:text-blue-400 transition">Framework</a>
-        <a href="#community" class="hover:text-blue-400 transition">Portal</a>
-        <a href="#news" class="hover:text-blue-400 transition">DevLog</a>
+    <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
+        <a href="#about" class="hover:text-blue-600 transition">Objectives</a>
+        <a href="#theory" class="hover:text-blue-600 transition">Pedagogy</a>
+        <a href="#portal" class="hover:text-blue-600 transition">Testing Portal</a>
+        <a href="#logs" class="hover:text-blue-600 transition">Research Logs</a>
     </div>
-    <a href="mailto:hhinchey@njcu.edu" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-5 py-2 rounded-full transition">CONTACT</a>
+    <a href="mailto:hhinchey@njcu.edu" class="text-[11px] font-bold border-b-2 border-black pb-1 hover:text-blue-600 hover:border-blue-600 transition">CONTACT RESEARCHER</a>
 </nav>
 
-<header class="relative pt-32 pb-20 px-6 overflow-hidden">
-    <div class="max-w-6xl mx-auto text-center relative z-10">
-        <span class="inline-block px-4 py-1 rounded-full border border-blue-500/30 text-blue-400 text-[10px] font-bold tracking-widest uppercase mb-6">Dissertation Phase 1: Community Validation</span>
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">Bridging the <span class="gradient-text">Fluency Paradox.</span></h1>
-        <p class="text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
-            Transitioning learners from <span class="text-white font-medium">app-based competence</span> to <span class="text-white font-medium">high-stakes social performance</span> via the Autonomous Adaptive Pedagogical Matrix.
+<header class="hero-bg py-32 px-8 border-b border-slate-100">
+    <div class="max-w-5xl mx-auto">
+        <span class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4 block">Active Study: Socio-Linguistic Acquisition</span>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-8">Welcome, Beta Testers.</h1>
+        <p class="text-xl text-slate-500 max-w-2xl font-light leading-relaxed mb-10">
+            We are investigating the transition from technical competence to social performance. Your participation helps us define the future of <span class="text-slate-900 font-medium">context-aware digital pedagogy.</span>
         </p>
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="#community" class="bg-white text-black font-bold px-8 py-4 rounded-xl hover:bg-blue-500 hover:text-white transition-all shadow-xl shadow-blue-500/10">Launch Beta Portal</a>
-            <a href="#framework" class="glass text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-all">Explore Framework</a>
+        <div class="flex space-x-4">
+            <a href="#portal" class="bg-blue-600 text-white px-8 py-4 rounded font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-blue-600/20">Access Simulation</a>
+            <a href="#theory" class="bg-white border border-slate-200 text-slate-900 px-8 py-4 rounded font-bold text-sm hover:bg-slate-50 transition">Review Theory</a>
         </div>
-    </div>
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600 rounded-full blur-[120px]"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600 rounded-full blur-[120px]"></div>
     </div>
 </header>
 
-<section id="about" class="max-w-6xl mx-auto py-24 px-6 grid lg:grid-cols-2 gap-16">
-    <div>
-        <h2 class="text-sm font-bold text-blue-500 uppercase tracking-[0.2em] mb-4">Mission Statement</h2>
-        <h3 class="text-3xl font-bold text-white mb-6">The Next Generation of Socio-Linguistic Intelligence.</h3>
-        <p class="text-slate-400 text-lg leading-relaxed mb-6">
-            Our objective is to move beyond decontextualized content delivery. We are building a <span class="text-blue-400 italic">"Flight Simulator for Social Interaction,"</span> integrating LLM-driven NPC dialogue with persistent vector memory.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="glass p-6 rounded-2xl">
-                <h4 class="text-white font-bold mb-2">Humanitarian</h4>
-                <p class="text-xs text-slate-400">Enabling refugees to navigate complex bureaucratic and social intake scenarios with reduced anxiety.</p>
+<section id="about" class="max-w-5xl mx-auto py-24 px-8">
+    <div class="grid lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-1">
+            <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-4">Study Overview</h2>
+            <h3 class="text-3xl font-bold leading-tight">Human-Centered Acquisition.</h3>
+        </div>
+        <div class="lg:col-span-2 space-y-6 text-slate-600 leading-relaxed">
+            <p>Traditional EdTech excels at content delivery but lacks the environmental nuance required for genuine fluency. This study focuses on <strong>"socially-situated simulations"</strong>—environments where learners must navigate cultural norms and tone to succeed.</p>
+            <p>Our objective is to evaluate how automated dialogic agents provide <strong>scaffolded support</strong> in real-time. By participating, you are contributing to a dataset that will inform inclusive, high-utility learning tools for global education and crisis management.</p>
+        </div>
+    </div>
+</section>
+
+<section id="theory" class="bg-slate-50 py-24 border-y border-slate-100">
+    <div class="max-w-5xl mx-auto px-8">
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold mb-4">Pedagogical Foundations</h2>
+            <p class="text-slate-500 italic">Validating established theory through modern technical implementation.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="research-card p-8">
+                <span class="text-blue-600 font-bold text-xs uppercase block mb-4">Pillar 01</span>
+                <h4 class="font-bold text-lg mb-2">The Affective Filter</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Investigating how simulated "low-stakes" environments bypass the performance anxiety associated with adult language acquisition. <em>(Krashen, 1982)</em></p>
             </div>
-            <div class="glass p-6 rounded-2xl">
-                <h4 class="text-white font-bold mb-2">Diplomacy</h4>
-                <p class="text-xs text-slate-400">High-fidelity training for cross-cultural negotiation and nuanced interpersonal rapport.</p>
+            <div class="research-card p-8">
+                <span class="text-blue-600 font-bold text-xs uppercase block mb-4">Pillar 02</span>
+                <h4 class="font-bold text-lg mb-2">Zone of Proximal Dev.</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Analyzing how algorithmic agents identify the learner's "edge of competence" to provide dynamic scaffolding. <em>(Vygotsky, 1978)</em></p>
+            </div>
+            <div class="research-card p-8">
+                <span class="text-blue-600 font-bold text-xs uppercase block mb-4">Pillar 03</span>
+                <h4 class="font-bold text-lg mb-2">Communicative Comp.</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Testing the efficacy of embodied practice over discrete grammar memorization in high-fidelity social scenarios. <em>(Hymes, 1972)</em></p>
             </div>
         </div>
     </div>
-    <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-1 rounded-3xl shadow-2xl">
-        <div class="bg-[#0b0f1a] p-10 rounded-[calc(1.5rem-1px)] h-full">
-            <h4 class="text-white font-bold mb-6 border-b border-white/10 pb-4 uppercase text-xs tracking-widest">Research Summary</h4>
-            <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                This community serves as the validator for my doctoral research. By analyzing beta tester telemetry, we measure the efficacy of "forward-injected" pedagogical scaffolding.
-            </p>
+</section>
+
+<section id="portal" class="max-w-5xl mx-auto py-24 px-8">
+    <div class="flex flex-col md:flex-row gap-16">
+        <div class="md:w-1/2">
+            <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-4">Simulation Control</h2>
+            <h3 class="text-3xl font-bold mb-6">Testing Dashboard</h3>
+            
             <div class="space-y-4">
-                <div class="flex items-center space-x-3 text-xs">
-                    <span class="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_8px_#22c55e]"></span>
-                    <span class="text-slate-300 font-bold">Vector Persistence Layer Active</span>
+                <div class="p-4 border border-slate-100 rounded flex items-center justify-between group cursor-pointer hover:bg-slate-50">
+                    <span class="text-sm font-bold">Simulation Alpha: Medical Intake</span>
+                    <span class="text-[10px] bg-green-100 text-green-700 px-2 py-1 rounded font-bold uppercase">Ready</span>
                 </div>
-                <div class="flex items-center space-x-3 text-xs">
-                    <span class="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_8px_#22c55e]"></span>
-                    <span class="text-slate-300 font-bold">Recursive AI Feedback Architecture Ready</span>
+                <div class="p-4 border border-slate-100 rounded flex items-center justify-between group cursor-pointer hover:bg-slate-50">
+                    <span class="text-sm font-bold">Simulation Beta: Diplomatic Liaison</span>
+                    <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded font-bold uppercase">Ready</span>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="framework" class="py-24 bg-[#0d121f]">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-white mb-4">Theoretical Pillars</h2>
-            <p class="text-slate-400">Expert-level grounding for the AAPM Infrastructure.</p>
-        </div>
-
-        <div class="flex flex-col lg:flex-row gap-8 min-h-[400px]">
-            <div class="lg:w-1/3 flex flex-col space-y-2">
-                <button onclick="switchTab('t1')" id="btn-t1" class="text-left p-6 rounded-2xl transition-all step-active hover:bg-white/5">
-                    <h4 class="text-white font-bold text-sm">1. Affective Filter</h4>
-                    <p class="text-[10px] text-blue-400 font-bold uppercase mt-1">Krashen (1982)</p>
-                </button>
-                <button onclick="switchTab('t2')" id="btn-t2" class="text-left p-6 rounded-2xl transition-all opacity-40 hover:opacity-100 hover:bg-white/5">
-                    <h4 class="text-white font-bold text-sm">2. ZPD & Scaffolding</h4>
-                    <p class="text-[10px] text-blue-400 font-bold uppercase mt-1">Vygotsky (1978)</p>
-                </button>
-                <button onclick="switchTab('t3')" id="btn-t3" class="text-left p-6 rounded-2xl transition-all opacity-40 hover:opacity-100 hover:bg-white/5">
-                    <h4 class="text-white font-bold text-sm">3. Communicative Competence</h4>
-                    <p class="text-[10px] text-blue-400 font-bold uppercase mt-1">Hymes (1972)</p>
-                </button>
-            </div>
-
-            <div class="lg:w-2/3 glass p-10 rounded-3xl flex items-center">
-                <div id="t1" class="tab-content">
-                    <h5 class="text-2xl font-bold text-white mb-4 italic">"Anxiety is the enemy of acquisition."</h5>
-                    <p class="text-slate-400 leading-relaxed">The AAPM simulation creates a 'safe-failure' environment. By removing the threat of social judgement, learners can process linguistic input more deeply, bypassing the mental blockages inherent in traditional adult education.</p>
-                </div>
-                <div id="t2" class="tab-content hidden">
-                    <h5 class="text-2xl font-bold text-white mb-4 italic">"Intelligent Scaffolding."</h5>
-                    <p class="text-slate-400 leading-relaxed">Our system uses recursive AI logic to identify the learner's 'Edge of Competence.' Agents provide just enough support to ensure success without reducing the cognitive effort required for genuine growth.</p>
-                </div>
-                <div id="t3" class="tab-content hidden">
-                    <h5 class="text-2xl font-bold text-white mb-4 italic">"Embodied Social Practice."</h5>
-                    <p class="text-slate-400 leading-relaxed">Grammar is a byproduct of social need. AAPM places the learner in culturally situated scenarios (Diplomatic Checkpoints, Medical Intakes) where social performance is the primary metric of success.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="community" class="max-w-6xl mx-auto py-24 px-6">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-        <div>
-            <h2 class="text-sm font-bold text-blue-500 uppercase tracking-widest mb-4">Beta Portal</h2>
-            <h3 class="text-4xl font-bold text-white">Tester Community</h3>
-        </div>
-        <div class="flex space-x-2">
-            <span class="px-3 py-1 glass rounded text-[10px] font-bold text-blue-400 uppercase">12 Active Threads</span>
-            <span class="px-3 py-1 glass rounded text-[10px] font-bold text-green-400 uppercase">34 Online</span>
-        </div>
-    </div>
-
-    <div class="grid lg:grid-cols-3 gap-8">
-        <div class="lg:col-span-2 space-y-4">
-            <div class="glass p-6 rounded-2xl flex justify-between items-center group cursor-pointer hover:border-blue-500/50 transition">
-                <div>
-                    <h4 class="text-white font-bold mb-1 group-hover:text-blue-400 transition">Scenario: The Diplomatic Intake — Scaffolding failure?</h4>
-                    <p class="text-xs text-slate-500">Last reply by <span class="text-blue-400">hhinchey_dev</span> • 15m ago</p>
-                </div>
-                <div class="text-right">
-                    <span class="bg-red-500/10 text-red-400 text-[10px] px-2 py-1 rounded font-bold uppercase">Critique</span>
-                </div>
-            </div>
-            <div class="glass p-6 rounded-2xl flex justify-between items-center group cursor-pointer hover:border-blue-500/50 transition">
-                <div>
-                    <h4 class="text-white font-bold mb-1 group-hover:text-blue-400 transition">Praise: The 'Contextual Hint' feature is a game changer</h4>
-                    <p class="text-xs text-slate-500">Last reply by <span class="text-blue-400">Learner_X</span> • 2h ago</p>
-                </div>
-                <div class="text-right">
-                    <span class="bg-blue-500/10 text-blue-400 text-[10px] px-2 py-1 rounded font-bold uppercase">Praise</span>
+                <div class="p-4 border border-slate-100 rounded flex items-center justify-between opacity-50">
+                    <span class="text-sm font-bold">Simulation Gamma: Crisis Negotiation</span>
+                    <span class="text-[10px] bg-slate-100 text-slate-500 px-2 py-1 rounded font-bold uppercase">Locked</span>
                 </div>
             </div>
         </div>
 
-        <div class="glass p-8 rounded-3xl h-fit">
-            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Submit Telemetry</h4>
+        <div class="md:w-1/2 bg-slate-900 rounded-2xl p-8 text-white">
+            <h4 class="font-bold text-sm uppercase tracking-widest mb-6 border-b border-white/10 pb-4">Submit Research Telemetry</h4>
             <form class="space-y-4">
-                <select class="w-full bg-[#0b0f1a] border border-white/10 rounded-xl p-3 text-xs text-white focus:border-blue-500 outline-none">
-                    <option>Critique / Bug</option>
-                    <option>Praise / Success</option>
-                    <option>Wishlist / Feature Request</option>
-                </select>
-                <textarea class="w-full bg-[#0b0f1a] border border-white/10 rounded-xl p-3 text-xs text-white h-32 focus:border-blue-500 outline-none" placeholder="Detail your socio-linguistic experience..."></textarea>
-                <button type="button" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl text-xs transition">Submit Report</button>
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-400 uppercase mb-2">Evaluation Category</label>
+                    <select class="w-full bg-slate-800 border border-white/10 rounded p-3 text-xs outline-none focus:border-blue-500">
+                        <option>Bug Report (Technical)</option>
+                        <option>Pedagogical Friction (Learning)</option>
+                        <option>Feature Request</option>
+                        <option>UX/UI Feedback</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-400 uppercase mb-2">Observations</label>
+                    <textarea class="w-full bg-slate-800 border border-white/10 rounded p-3 text-xs h-32 outline-none focus:border-blue-500" placeholder="Detail the interaction and the agent's response fidelity..."></textarea>
+                </div>
+                <button type="button" class="w-full bg-white text-slate-900 font-bold py-3 rounded text-xs hover:bg-blue-500 hover:text-white transition">SUBMIT DATA</button>
             </form>
         </div>
     </div>
 </section>
 
-<section id="news" class="bg-[#0d121f] py-24">
-    <div class="max-w-4xl mx-auto px-6">
-        <h3 class="text-3xl font-bold text-white mb-12 text-center">Development Logs</h3>
+<section id="logs" class="bg-slate-50 py-24 border-t border-slate-100">
+    <div class="max-w-3xl mx-auto px-8">
+        <h3 class="text-center text-2xl font-bold mb-12">Researcher Log Updates</h3>
         <div class="space-y-12">
-            <div class="relative pl-8 border-l-2 border-blue-500/20">
-                <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_10px_#3b82f6]"></div>
-                <p class="text-[10px] font-bold text-blue-400 uppercase tracking-widest mb-2">April 17, 2026</p>
-                <h4 class="text-white font-bold text-xl mb-3">V2 Infrastructure Deployment</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Integrated the dedicated Framework visualization and updated the feedback portal to distinguish between pedagogical critiques and technical bugs. Vector DB persistence is now 98% stable.</p>
+            <div class="flex gap-8">
+                <div class="text-xs font-bold text-slate-400 w-24 pt-1">APR 17</div>
+                <div class="flex-1">
+                    <h4 class="font-bold text-lg mb-2">Portal Overhaul & Refined Feedback Loops</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">The testing hub has been updated to prioritize pedagogical feedback over technical bug reporting. This ensures data collection aligns more closely with our core research pillars.</p>
+                </div>
             </div>
-            <div class="relative pl-8 border-l-2 border-white/10 opacity-50">
-                <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-white/20"></div>
-                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">April 05, 2026</p>
-                <h4 class="text-white font-bold text-xl mb-3">Alpha Launch: Initial Scaffolding Tests</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Successfully launched Sim-A1 (The Librarian). Monitoring initial data points for 'Affective Filter' spikes in high-stakes adult learners.</p>
+            <div class="flex gap-8">
+                <div class="text-xs font-bold text-slate-400 w-24 pt-1">APR 01</div>
+                <div class="flex-1">
+                    <h4 class="font-bold text-lg mb-2">Initial Testing Cohort Deployed</h4>
+                    <p class="text-sm text-slate-500 leading-relaxed">Phase 1 testing of the "Medical Intake" scenario is now active. We are currently measuring response latency and scaffolding accuracy in native vs. non-native speakers.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="py-20 text-center border-t border-white/5">
-    <p class="text-sm font-bold text-white mb-4 tracking-tighter uppercase">Henry Hinchey<span class="font-light text-slate-500 ml-2">Ed.D. Candidate</span></p>
-    <div class="flex justify-center space-x-6 mb-8 text-xs font-bold text-slate-500">
-        <a href="mailto:hhinchey@njcu.edu" class="hover:text-blue-400 transition">hhinchey@njcu.edu</a>
-        <span>New Jersey City University</span>
+<footer class="py-16 text-center border-t border-slate-100 bg-white">
+    <p class="text-xs font-bold text-slate-400 uppercase tracking-[0.4em] mb-4">Project Faculty Lead: Henry Hinchey</p>
+    <a href="mailto:hhinchey@njcu.edu" class="text-sm font-medium hover:text-blue-600 transition">hhinchey@njcu.edu</a>
+    <div class="mt-8 text-[10px] text-slate-400 uppercase tracking-widest">
+        New Jersey City University | Ed.D. Leadership Research Group
     </div>
-    <p class="text-[10px] text-slate-600 uppercase tracking-[0.3em]">Confidential & Proprietary — All Rights Reserved 2026</p>
 </footer>
-
-<script>
-    function switchTab(tabId) {
-        // Hide all tabs
-        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
-        // Remove active class from buttons
-        document.querySelectorAll('#framework button').forEach(btn => {
-            btn.classList.remove('step-active');
-            btn.classList.add('opacity-40');
-        });
-        
-        // Show target tab
-        document.getElementById(tabId).classList.remove('hidden');
-        // Set active button
-        document.getElementById('btn-' + tabId).classList.add('step-active');
-        document.getElementById('btn-' + tabId).classList.remove('opacity-40');
-    }
-</script>
 
 </body>
 </html>
