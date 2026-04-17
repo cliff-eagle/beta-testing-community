@@ -3,56 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAPM Beta Community Hub</title>
+    <title>AAPM Beta Testing Community</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-gradient { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #334155 100%); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-900">
+<body class="bg-slate-50 font-sans text-slate-800 selection:bg-blue-200">
 
-<nav class="bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center sticky top-0 z-50">
-    <h1 class="font-bold text-xl tracking-tight text-blue-600">AAPM COMMUNITY</h1>
-    <div class="space-x-6 text-sm font-medium">
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#framework" class="hover:text-blue-600">The Framework</a>
-        <a href="#beta" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Join Beta</a>
+<nav class="bg-white border-b border-slate-200 px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
+    <h1 class="font-bold text-xl tracking-tight text-slate-900">AAPM<span class="font-light text-slate-500">|RESEARCH</span></h1>
+    <div class="space-x-6 text-sm font-medium hidden md:block">
+        <a href="#framework" class="text-slate-600 hover:text-slate-900 transition-colors">Framework</a>
+        <a href="#governance" class="text-slate-600 hover:text-slate-900 transition-colors">Governance</a>
+        <a href="#dashboard" class="bg-slate-900 text-white px-5 py-2.5 rounded hover:bg-slate-800 transition-colors">Enter Portal</a>
     </div>
 </nav>
 
-<header class="hero-gradient text-white py-20 px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Shape the Future of AI Pedagogy</h2>
-    <p class="text-lg text-slate-300 max-w-2xl mx-auto">
-        A community of beta testers exploring the **Agent-Aided Pedagogical Model (AAPM)** within immersive life-simulation environments.
+<header class="hero-gradient text-white py-24 px-6 text-center border-b-4 border-blue-600">
+    <span class="text-blue-400 font-semibold tracking-wider text-sm uppercase mb-4 block">Phase 1 Clinical Trials</span>
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 max-w-3xl mx-auto leading-tight">Autonomous Adaptive Pedagogical Matrix</h2>
+    <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light">
+        A secure, closed-beta environment for validating LLM-driven socio-linguistic simulations.
     </p>
 </header>
 
-<main class="max-w-5xl mx-auto py-12 px-6">
-    <section id="about" class="mb-16">
-        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-            <h3 class="font-bold text-lg mb-2">Community Purpose</h3>
-            <p class="text-slate-700">
-                This community connects researchers and students to test dialogic agents that foster critical thinking. Your feedback directly impacts the evolution of the AAPM framework.
+<main class="max-w-5xl mx-auto py-16 px-6">
+    <section id="framework" class="mb-20 grid md:grid-cols-2 gap-12 items-start">
+        <div>
+            <h3 class="text-2xl font-bold mb-4 text-slate-900 border-l-4 border-blue-600 pl-4">Theoretical Foundation</h3>
+            <p class="text-slate-600 mb-4 leading-relaxed">
+                This portal serves as the primary data collection interface for the AAPM model. Our community focuses on reducing the affective filter through immersive, scaffolded AI interactions rather than rote content delivery.
             </p>
+            <ul class="space-y-3 text-sm text-slate-700 font-medium">
+                <li class="flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span> Persistence Vector Database Active</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span> Generative Micro-Curriculum Engine Online</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-blue-600 rounded-full mr-3"></span> Socio-Linguistic Evaluation Protocol V1.0</li>
+            </ul>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-2">Current Active Roles</h4>
+            <div class="space-y-4 mt-4">
+                <div class="pb-4 border-b border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Lead Researcher</span>
+                    <p class="text-sm mt-1">Monitors pedagogical matrices, curates scenario parameters, and synthesizes community feedback into model iterations.</p>
+                </div>
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Beta Tester (Learner)</span>
+                    <p class="text-sm mt-1">Engages in isolated social simulations, evaluates NPC response fidelity, and reports algorithmic friction.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="framework" class="grid md:grid-cols-2 gap-12 mb-16 items-center">
-        <div>
-            <h3 class="text-2xl font-bold mb-4">The AAPM Framework</h3>
-            <p class="text-slate-600 mb-4">
-                Our model leverages dialogic AI agents to guide learners through complex social simulations. Testers explore how these agents facilitate *scaffolded inquiry* in a life-sim environment.
-            </p>
-            <ul class="space-y-2 text-sm text-slate-700">
-                <li class="flex items-center">✅ <strong>Phase 1:</strong> Initial Interaction & Rapport</li>
-                <li class="flex items-center">✅ <strong>Phase 2:</strong> Scaffolded Inquiry</li>
-                <li class="flex items-center">✅ <strong>Phase 3:</strong> Critical Reflection</li>
-            </ul>
+    <section id="governance" class="mb-20">
+        <h3 class="text-2xl font-bold mb-6 text-slate-900 border-b pb-2">Community Norms & Governance</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-slate-50 p-6 rounded border border-slate-200">
+                <h4 class="font-bold text-slate-800 mb-2">1. Constructive Inquiry</h4>
+                <p class="text-sm text-slate-600">Feedback must focus on the agent's pedagogical effectiveness, not just technical glitches.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded border border-slate-200">
+                <h4 class="font-bold text-slate-800 mb-2">2. Data Privacy</h4>
+                <p class="text-sm text-slate-600">All interaction logs are anonymized and stored strictly for dissertation validation purposes.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded border border-slate-200">
+                <h4 class="font-bold text-slate-800 mb-2">3. Collaborative Iteration</h4>
+                <p class="text-sm text-slate-600">Testers are co-researchers; inter-group dialogue is encouraged via the weekly symposium threads.</p>
+            </div>
         </div>
-        <div class="bg-slate-200 h-64 rounded-xl flex items-center justify-center text-slate-500 italic">
-            [Visual: Diagram of Agent-Student Interaction]
+    </section>
+
+    <section id="dashboard" class="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
+        <div class="bg-slate-900 p-6 text-white flex justify-between items-center">
+            <h3 class="font-bold text-lg">Beta Tester Control Panel</h3>
+            <span class="bg-green-500/20 text-green-400 text-xs px-3 py-1 rounded-full font-bold">System Online</span>
+        </div>
+        <div class="p-8">
+            <div class="mb-8">
+                <h4 class="font-bold text-slate-900 mb-4">Submit Scenario Telemetry</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Scenario ID</label>
+                            <select class="w-full border border-slate-300 rounded p-2 text-sm bg-slate-50">
+                                <option>Sim-A1: The Librarian</option>
+                                <option>Sim-B2: Diplomatic Dispute</option>
+                                <option>Sim-C1: Emergency Room</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Affective Filter Rating (1-10)</label>
+                            <input type="number" min="1" max="10" class="w-full border border-slate-300 rounded p-2 text-sm bg-slate-50" placeholder="e.g., 4">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Linguistic Fidelity Notes</label>
+                        <textarea class="w-full border border-slate-300 rounded p-3 text-sm bg-slate-50 h-24" placeholder="Detail any unnatural phrasing or scaffolding failures from the NPC..."></textarea>
+                    </div>
+                    <button type="button" class="bg-blue-600 text-white font-bold px-6 py-2 rounded hover:bg-blue-700 transition-colors">Submit Telemetry</button>
+                </form>
+            </div>
         </div>
     </section>
 </main>
+
+<footer class="bg-slate-900 py-8 text-center text-slate-500 text-sm">
+    <p>&copy; 2026 Autonomous Adaptive Pedagogical Matrix Research Group.</p>
+</footer>
+
 </body>
 </html>
